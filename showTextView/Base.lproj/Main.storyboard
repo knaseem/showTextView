@@ -10,6 +10,7 @@
         <scene sceneID="Knk-r3-jdW">
             <objects>
                 <navigationController id="w0T-VO-eg0" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6x4-gX-eCJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -31,11 +32,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZfK-Zu-V4C">
-                                <rect key="frame" x="40" y="84" width="520" height="216"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is a test.  " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZfK-Zu-V4C">
+                                <rect key="frame" x="36" y="84" width="303" height="283"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -61,30 +62,31 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="showButton" destination="6SN-Jp-bhY" id="TuW-sc-jZF"/>
                         <outlet property="textView" destination="ZfK-Zu-V4C" id="hNu-x0-BsH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-369" y="287"/>
+            <point key="canvasLocation" x="-622.5" y="288.5"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="x4t-Do-HTj">
             <objects>
-                <viewController id="4q0-Qi-2w5" sceneMemberID="viewController">
+                <viewController id="4q0-Qi-2w5" customClass="ViewController2" customModule="showTextView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RXC-BZ-Ffn"/>
                         <viewControllerLayoutGuide type="bottom" id="GBr-g6-2U1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="S98-QU-OHA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WuM-yQ-TR6">
-                                <rect key="frame" x="40" y="84" width="520" height="216"/>
+                                <rect key="frame" x="36" y="84" width="303" height="283"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -97,10 +99,14 @@
                             <constraint firstItem="WuM-yQ-TR6" firstAttribute="top" secondItem="RXC-BZ-Ffn" secondAttribute="bottom" constant="20" id="u5Z-Ub-tXH"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="textViewOutput" destination="WuM-yQ-TR6" id="Pbs-17-n1d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Vp-s8-GJE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="285"/>
+            <point key="canvasLocation" x="-138.5" y="288.5"/>
         </scene>
     </scenes>
 </document>
