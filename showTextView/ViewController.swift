@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var showButton: UIBarButtonItem!
     @IBOutlet weak var textView: UITextView!
     
+    //MARK:  Save file test_cocuments.txt to documents directory
     @IBAction func saveButton(sender: UIBarButtonItem) {
         
         let fileManager = NSFileManager.defaultManager()
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
             // let stringToWrite = "This is the string to save to file"
             if let url = url {
                 try savedText.writeToURL(url, atomically: true, encoding: NSUTF8StringEncoding)
+                
             }
             
         } catch {
