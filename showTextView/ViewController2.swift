@@ -9,24 +9,38 @@
 import UIKit
 
 class ViewController2: UIViewController {
+    
     @IBOutlet weak var textViewOutput: UITextView!
     
-    var outputMessage = String()
+    
+   // var outputMessage = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
-        textViewOutput.text = outputMessage
+        let fileManager = NSFileManager.defaultManager()
+        
+        do {
+            let documents = try fileManager.URLForDirectory(NSSearchPathDirectory.DocumentDirectory, inDomain: NSSearchPathDomainMask.UserDomainMask, appropriateForURL: nil, create: false)
+            
+            let url = NSURL(string: "test_document.txt", relativeToURL: documents)
+            if let url = url {
+                //try stringToWrite.writeToURL(url, atomically: true, encoding: NSUTF8StringEncoding)
+                textViewOutput.text = try String(contentsOfURL: url)
+            }
+            
+            
+        } catch {
+            
+        }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 

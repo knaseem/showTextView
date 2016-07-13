@@ -33,10 +33,10 @@ class ViewController: UIViewController {
         
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+/*    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let secondViewController: ViewController2 = segue.destinationViewController as! ViewController2
         secondViewController.outputMessage = textView.text
-    }
+    } */
     
     
 }
